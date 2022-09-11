@@ -26,5 +26,28 @@ public class Main {
         if (personAge >= 24 ) {
             System.out.println("Человек окончил университет и ему пора искать первую работу");
         }
+
+        System.out.println("task3:");
+        int trainSeatsAll = 102;
+        int seatPlace = 60;
+        int standingPlace = trainSeatsAll - seatPlace;
+
+        // ходные параметры
+        int seatPlaceFact = 60; // фактическое количество сидячих мест
+        int standingPlaceFact = 62; // фактическое количество стоячих мест
+
+
+        if (seatPlaceFact < seatPlace) {
+            System.out.println("В вагоне есть сидячие места");
+        }
+
+        if (standingPlaceFact < standingPlace) {
+            System.out.println("В вагоне есть стоячие места");
+        }
+
+        if (seatPlaceFact >= seatPlace && standingPlaceFact >= standingPlace) {
+            System.out.println("вагон уже полностью забит");
+        }
+
     }
 }
