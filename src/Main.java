@@ -49,5 +49,13 @@ public class Main {
             System.out.println("вагон уже полностью забит");
         }
 
+        System.out.println("task4:");
+        int childAge = 15;
+
+        if (childAge >= 18) {
+            System.out.println("Поздравляем Вас с совершеннолетием!");
+        } else {
+            System.out.println("Возраст совершеннолетия ещё не наступил, и нужно немного подождать");
+        }
     }
 }
