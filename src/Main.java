@@ -72,5 +72,26 @@ public class Main {
                 }
             }
         }
+
+        System.out.println("task3New:"); //Доработка Задания №3
+        /**  Инициализацию переменных оставил с задачи task1 (чуть выше)
+         * int trainSeatsAll = 102;
+         * int seatPlace = 60;
+         * int standingPlace = trainSeatsAll - seatPlace;
+         *
+         * // ходные параметры
+         * int seatPlaceFact = 60; // фактическое количество сидячих мест
+         * int standingPlaceFact = 62; // фактическое количество стоячих мест
+         */
+
+        if (seatPlaceFact >= seatPlace && standingPlaceFact >= standingPlace) {
+            System.out.println("вагон уже полностью забит");
+        } else {
+            if (seatPlaceFact < seatPlace) {
+                System.out.println("В вагоне есть сидячие места");
+            } else {
+                System.out.println("В вагоне есть стоячие места");
+            }
+        }
     }
 }
